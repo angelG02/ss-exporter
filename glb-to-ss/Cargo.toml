@@ -1,11 +1,15 @@
 [package]
 name = "glb-to-ss"
 version = "0.1.0"
+authors = ["Angel G <angel40.georgiev@gmail.com>"]
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+eframe = { version="0.27", features = [
+    "default",
+] }
+rfd = "0.14.1"
+
 tracing = "0.1.37"
 tracing-subscriber = "0.3.17"
 tokio = {version = "1.37.0", features = ["full"]}
